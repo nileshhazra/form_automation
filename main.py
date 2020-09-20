@@ -1,14 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-
+import time
 
 
 driver = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
 
 driver.get('https://docs.google.com/forms/d/e/1FAIpQLSeJVgNegjlq0IkY79KoxfY6ThtnFMI1ykZGw8thGLmu58IOtw/viewform?usp=sf_link')
-
+# driver.implicitly_wait(50)
 py_input = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
+# driver.implicitly_wait(50)
+# print("Element is visible? " + str(py_input.is_displayed()))
+time.sleep(0.1)
 py_input.send_keys('Nilesh Hazra')
+# driver.implicitly_wait(20)
 py_input = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input')
 py_input.send_keys('Birla Institute of technology , Mesra')
 py_input = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[3]/div/div/div[2]/div/div[1]/div/div[1]/input')
@@ -29,8 +33,7 @@ py_input = driver.find_element_by_xpath('//*[@id="i30"]/div[3]/div').click()
 
 py_input = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div[2]/span').click()
 
-
-
+driver.close()
 
 
 
