@@ -24,7 +24,10 @@ py_input = driver.find_element_by_xpath('//*[@id="i5"]/div[3]/div').click()
 
 py_input = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div[2]/span').click()
 
+py_input = driver.find_element_by_xpath('//*[@id="i8"]/div[3]/div').click()
+py_input = driver.find_element_by_xpath('//*[@id="i30"]/div[3]/div').click()
 
+py_input = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div[2]/span').click()
 
 
 
